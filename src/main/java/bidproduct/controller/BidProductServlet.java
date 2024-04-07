@@ -6,7 +6,7 @@ import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/bidProductServlet")
+@WebServlet("/bidproduct/bidProduct.do")
 public class BidProductServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest req, HttpServletResponse res)
