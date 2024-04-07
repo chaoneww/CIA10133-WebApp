@@ -1,4 +1,4 @@
-package bidproduct;
+package bidproduct.model;
 
 import java.sql.Date;
 
