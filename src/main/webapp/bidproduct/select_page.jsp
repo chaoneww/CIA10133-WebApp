@@ -38,33 +38,33 @@
         </form>
     </li>
 
-    <%--    <jsp:useBean id="bidProductService" scope="page" class="bidproduct.service.BidProductService"/>--%>
+    <jsp:useBean id="bidProductService" scope="page" class="bidproduct.service.BidProductService"/>
 
-    <%--    <li>--%>
-    <%--        <form METHOD="post" ACTION="emp.do">--%>
-    <%--            <b>選擇員工編號:</b>--%>
-    <%--            <select size="1" name="empno">--%>
-    <%--                <c:forEach var="empVO" items="${bidProductService.all}">--%>
-    <%--                <option value="${empVO.empno}">${empVO.empno}--%>
-    <%--                    </c:forEach>--%>
-    <%--            </select>--%>
-    <%--            <input type="hidden" name="action" value="getOne_For_Display">--%>
-    <%--            <input type="submit" value="送出">--%>
-    <%--        </form>--%>
-    <%--    </li>--%>
+    <li>
+        <form METHOD="post" ACTION="bidProduct.do">
+            <b>選擇競標商品編號:</b>
+            <select size="1" name="bidProductId">
+                <c:forEach var="bidProductVO" items="${bidProductService.all}">
+                <option value="${bidProductVO.bidProductId}">${bidProductVO.bidProductId}
+                    </c:forEach>
+            </select>
+            <input type="hidden" name="action" value="getOne_For_Display">
+            <input type="submit" value="送出">
+        </form>
+    </li>
 
-    <%--    <li>--%>
-    <%--        <form METHOD="post" ACTION="emp.do">--%>
-    <%--            <b>選擇員工姓名:</b>--%>
-    <%--            <select size="1" name="empno">--%>
-    <%--                <c:forEach var="empVO" items="${bidProductService.all}">--%>
-    <%--                <option value="${empVO.empno}">${empVO.ename}--%>
-    <%--                    </c:forEach>--%>
-    <%--            </select>--%>
-    <%--            <input type="hidden" name="action" value="getOne_For_Display">--%>
-    <%--            <input type="submit" value="送出">--%>
-    <%--        </form>--%>
-    <%--    </li>--%>
+    <li>
+        <form METHOD="post" ACTION="bidProduct.do">
+            <b>選擇競標商品名稱:</b>
+            <select size="1" name="bidProductId">
+                <c:forEach var="bidProductVO" items="${bidProductService.all}">
+                <option value="${bidProductVO.bidProductId}">${bidProductVO.name}
+                    </c:forEach>
+            </select>
+            <input type="hidden" name="action" value="getOne_For_Display">
+            <input type="submit" value="送出">
+        </form>
+    </li>
 </ul>
 
 

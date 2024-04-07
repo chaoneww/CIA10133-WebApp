@@ -29,7 +29,7 @@
 
     <style>
         table {
-            width: 600px;
+            width: 1000px;
             background-color: white;
             margin-top: 5px;
             margin-bottom: 5px;

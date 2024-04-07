@@ -3,7 +3,6 @@
 <%@ page import="java.util.*" %>
 <%@ page import="bidproduct.service.*" %>
 <%@ page import="bidproduct.model.*" %>
-
 <%-- 此頁練習採用 EL 的寫法取值 --%>
 
 <%
@@ -38,7 +37,7 @@
 
     <style>
         table {
-            width: 1200px;
+            width: 1000px;
             background-color: white;
             margin-top: 5px;
             margin-bottom: 5px;
